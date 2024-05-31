@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from cymolthemes.com/html/autovis/demo2/car-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Apr 2024 17:19:42 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Autovis - Car Dealers HTML Template, Autovis - Car Dealers WordPress Theme, wordpress theme, premium wordpress theme, responsive wordpress theme, themeforest, envato,  themes & templates, wordpress theme, unlimited colors available, ui/ux, ui/ux design, best wordpress theme, wordpress theme, JavaScript, best css theme,css3, elementor theme, latest premium themes 2024, latest premium templates 2024, Preyan Technosys Pvt.Ltd, cymol themes, themetech mount, Web 3.0, multi-theme, website theme and template, bootstrap template, web templates, responsive theme, services, web design and development, blog website, HTML template, Html5, auto, business, car dealer, car dealership, car listing, cars, listing, motors, automotive, car repair, cardealer, cars, directory, elementor, car inventory, vehicle,  auto, auto dealer, auto shop, bike, buy car, car store, accessories shop, car ecommerce, car seller, car listing, auto dealer, auto parts, automobile, car rental, car repair, car shop, car wash, garage, marketplace, motor cycle, trucks" >
+<meta name="description" content="Autovis - Car Dealers HTML Template" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carobar</title>
+
+<link rel="shortcut icon" href="images/favicon.webp">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+<link rel="stylesheet" type="text/css" href="css/fontello.css">
+<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="css/shortcodes.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/megamenu.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body>
+
+    <!-- page start -->
+    <div class="page sticky-column">
+
+        <!--model register  -->
+        <div class="modal signUp-modal fade" id="modal-signup" tabindex="-1" aria-labelledby="modal-signupLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modal-signupLabel">Register</h3>
+                        <p>Already have an account? <button class="signupbtn prt-btn btn-inline" type="button" data-bs-toggle="modal" data-bs-target="#modal-login">Log In</button></p>
+                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <form class="signup-form">
+                                    <p class="prt-inputs">
+                                        <i class="icon-user mt_3"></i>
+                                        <input type="text" name="username" class="username form-control" placeholder="Enter name">
+                                    </p>
+                                    <p class="prt-inputs">
+                                        <i class="ti-email"></i>
+                                        <input type="text" name="email" class="email form-control" placeholder="Enter email">
+                                    </p>
+                                    <p class="prt-inputs">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                        <input type="password" name="password" class="password form-control" placeholder="Enter password">
+                                    </p>
+                                    <p class="prt-inputs">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                        <input type="password" name="comfirmpassword" class="password form-control" placeholder="Comfirm password">
+                                    </p>
+                                    <p><button type="submit" class="prt-btn prt-btn-size-md prt-btn-shape-rounded prt-btn-style-border prt-btn-color-white">Sign up now</button></p>
+                                    <p class="mb-15">By sign up you agree to the <a href="#">‘terms & conditons’</a></p>
+                                </form>
+                                <ul class="social-icons model-social">
+                                    <li>
+                                        <a target="black" href="https://www.facebook.com/preyantechnosys19" rel="noopener" aria-label="facebook"><i class="ti-facebook"></i></a>
+                                    </li>
+                                    <li><a target="black" href="#" rel="noopener" aria-label="linkedin"><i class="ti-google"></i></a></li>
+                                    <li>
+                                        <a target="black" href="https://twitter.com/PreyanTechnosys" rel="noopener" aria-label="twitter"><i class="flaticon flaticon-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model register end -->
+        <!-- model login -->
+        <div class="modal signUp-modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-loginLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modal-loginLabel">Log In</h3>
+                        <p>Don’t have any account? <button class="signupbtn prt-btn btn-inline" type="button" data-bs-toggle="modal" data-bs-target="#modal-signup">Register</button></p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <form class="signup-form">
+                                    <p class="prt-inputs">
+                                        <i class="ti-email"></i>
+                                        <input type="text" name="username" class="username form-control" placeholder="Enter email">
+                                    </p>
+                                    <p class="prt-inputs">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                        <input type="password" name="password" class="password form-control" placeholder="Enter password">
+                                    </p>
+                                    <p class="cookies">
+                                        <span>
+                                            <input type="checkbox" name="cookies-consent" id="cookies-consent2">
+                                            <label for="cookies-consent2"></label>
+                                            Keep me signed in
+                                        </span><a href="#">Lost your password?</a>
+                                    </p>
+                                    <p><button type="submit" class="prt-btn prt-btn-size-md prt-btn-shape-rounded prt-btn-style-border prt-btn-color-white">Login</button></p>
+                                    <p class="mb-15">By sign up you agree to the <a href="#">‘terms & conditons’</a></p>
+                                </form>
+                                <ul class="social-icons model-social">
+                                    <li>
+                                        <a target="black" href="https://www.facebook.com/preyantechnosys19" rel="noopener" aria-label="facebook"><i class="ti-facebook"></i></a>
+                                    </li>
+                                    <li><a target="black" href="#" rel="noopener" aria-label="linkedin"><i class="ti-google"></i></a></li>
+                                    <li>
+                                        <a target="black" href="https://twitter.com/PreyanTechnosys" rel="noopener" aria-label="twitter"><i class="flaticon flaticon-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model login end -->
+        <!-- header start -->
+        <header id="masthead" class="header prt-header-style-01">
+            <!-- topbar -->
+            <div class="top_bar prt-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="top_bar_contact_item">
+                                <ul class="prt-list list-inline">
+                                    <li><a href="mailto:info@example.com">info.support@carobar.com</a></li>
+                                    <li>Clifton,Karachi</li>
+                                </ul>
+                                <div class="top-media-block">
+                                    <div class="top-link-block"><img width="22" height="22" class="img-fluid" src="images/icon-01.webp" alt="icon"><span> if you have any query?</span> <a class="underline" href="contact-us.html">View more</a></div>
+                                    <div class="top-link-block prt-signup-link">
+                                        <button class="signupbtn prt-btn btn-inline" type="button" data-bs-toggle="modal" data-bs-target="#modal-signup"><i class="icon-user-o"></i> Sign up</button>
+                                    </div>
+                                    <ul class="social-icons topbar-social">
+                                        <li>
+                                            <a target="black" href="https://www.facebook.com/preyantechnosys19" rel="noopener" aria-label="facebook"><i class="fontello icon-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a target="black" href="https://twitter.com/PreyanTechnosys" rel="noopener" aria-label="twitter"><i class="flaticon flaticon-twitter"></i></a>
+                                        </li>
+                                        <li><a target="black" href="https://www.linkedin.com/in/preyan-technosys-pvt-ltd/" rel="noopener" aria-label="linkedin"><i class="icon-linkedin"></i></a></li>
+                                        <li>
+                                            <a target="black" href="https://dribbble.com/PreyanTechnosys" rel="noopener" aria-label="dribbble"><i class="fontello icon-dribbble"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- topbar end -->
+            <!-- site-header-menu -->
+            <div id="site-header-menu" class="site-header-menu">
+                <div class="site-header-menu-inner prt-stickable-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="header-menu-wrapper d-flex align-items-center justify-content-between">
+                                    <!--site-navigation -->
+                                    <div class="site-navigation">
+                                        <div class="sitemenu-main d-flex align-items-center justify-content-between">
+                                            <!-- site-branding -->
+                                            <div class="site-branding">
+                                                <h3>
+                                                    <a class="home-link" href="index.html" title="Qmoto" rel="home">
+
+                                                        CarObar
+                                                        <!--<img id="logo-img" height="30" width="200" class="img-fluid auto_size" src="images/logo.svg" alt="logo-img">-->
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <!-- site-branding end -->
+                                            <!-- menu-link -->
+                                            <div id="site-header-menu" class="site-header-menu">
+                                                <div class="site-header-menu-inner prt-stickable-header">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="header-menu-wrapper d-flex align-items-center justify-content-between">
+                                                                    <!--site-navigation -->
+                                                                    <div class="site-navigation">
+                                                                        <div class="sitemenu-main d-flex align-items-center justify-content-between">
+                                                                            <!-- site-branding -->
+                                                                            <div class="site-branding">
+                                                                                <h3>
+                                                                                    <a class="home-link" href="index.html" title="Qmoto" rel="home">
+
+                                                                                        CarObar
+                                                                                        <!--<img id="logo-img" height="30" width="200" class="img-fluid auto_size" src="images/logo.svg" alt="logo-img">-->
+                                                                                    </a>
+                                                                                </h3>
+                                                                            </div>
+                                                                            <!-- site-branding end -->
+                                                                            <!-- menu-link -->
+                                                                            <div class="menu-link">
+                                                                                <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                                                                    <span class="menubar-box">
+                                                                                        <span class="menubar-inner"></span>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <!-- menu -->
+                                                                                <nav class="main-menu menu-mobile" id="menu">
+                                                                                    <ul class="menu">
+                                                                                        <li class="mega-menu-item active">
+                                                                                            <a href="index.html" class="mega-menu-link">Home</a>
+                                                                                            <ul class="mega-submenu">
+                                                                                                <li><a href="https://cymolthemes.com/html/autovis/index.html">Cardealer 1</a></li>
+                                                                                                <li><a href="https://cymolthemes.com/html/autovis/homepage-2.html">Cardealer 2</a></li>
+                                                                                                <li class="mega-menu-item active"><a href="index-2.html">Modern</a></li>
+                                                                                                <li class="mega-menu-item"><a target="black" href="https://cymolthemes.com/html/autovis/demo3/">Classic</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li class="mega-menu-item" style="display:none">
+                                                                                            <a href="#" class="mega-menu-link">Pages</a>
+                                                                                            <ul class="mega-submenu">
+                                                                                                <li><a href="about-us.html">About us</a></li>
+                                                                                                <li><a href="services.html">Service</a></li>
+                                                                                                <li><a href="gallery.html">Gallery</a></li>
+                                                                                                <li><a href="brand.html">Brand category</a></li>
+                                                                                                <li><a href="special-offer.html">Special offer</a></li>
+                                                                                                <li><a href="our-team.html">Our team</a></li>
+                                                                                                <li><a href="team-details.html">Team details</a></li>
+                                                                                                <li><a href="reviews.html">Customer review</a></li>
+                                                                                                <li><a href="faq.html">FAQ</a></li>
+                                                                                                <li><a href="error.html">Error page</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li style="display:none" class="mega-menu-item"><a href="car-details.html">Car details</a></li>
+                                                                                        <li class="mega-menu-item"><a href="listing.html">Listing</a></li>
+                                                                                        <li class="mega-menu-item" style="display:none">
+                                                                                            <a href="#" class="mega-menu-link">Blog</a>
+                                                                                            <ul class="mega-submenu">
+                                                                                                <li><a href="blog.html">Blog classic</a></li>
+                                                                                                <li><a href="blog-grid.html">Blog grid view</a></li>
+                                                                                                <li><a href="blog-single.html">Blog single view</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li class="mega-menu-item"><a href="contact-us.html">Contact</a></li>
+                                                                                    </ul>
+                                                                                </nav><!-- menu end -->
+                                                                            </div>
+                                                                            <!-- menu-link end-->
+                                                                        </div>
+                                                                    </div><!-- site-navigation end-->
+                                                                    <!-- header_extra -->
+                                                                    <div class="header_extra">
+                                                                        <form>
+                                                                            <div class="header-search">
+                                                                                <input type="text" placeholder="Search car...." required>
+                                                                                <button class="fa fa-search" type="submit"></button>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <!-- header_extra -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- menu-link end-->
+                                        </div>
+                                    </div><!-- site-navigation end-->
+                                    <!-- header_extra -->
+                                    <div class="header_extra">
+                                        <form>
+                                            <div class="header-search">
+                                                <input type="text" placeholder="Search car...." required>
+                                                <button class="fa fa-search" type="submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- header_extra -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- site-header-menu end-->
+        </header><!-- header end -->
+        <!-- page-title -->
+        <div class="prt-page-title-row style5">
+            <div class="prt-page-title-row-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="prt-page-title-row-heading">
+                                <div class="prt-price-tag">
+                                    <span class="title">Price : 62,78712 </span>
+                                    <a href="#"><i class="flaticon flaticon-share"></i></a>
+                                </div>
+                                <div class="page-title-heading">
+                                    <h2 class="title">Toyota Camry 2024</h2>
+                                </div>
+                                <div class="prt-location">
+                                    <p class="mb-0"><i class="flaticon flaticon-location"></i>Carobar Karachi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-video-wrap">
+                    <video src="images/video-bg.mp4" loop muted autoplay>
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end-->
+        <!-- site-main start -->
+        <div class="site-main">
+
+            <!-- car-details-section -->
+            <section class="prt-row car-details-single-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="prt-car-details-area">
+                                <div class="prt-sticky-menu">
+                                    <div class="car-details-menu">
+                                        <ul class="prt-list car-details-menu-list">
+                                            <!--<li class="items"><a class="active" href="#car-view">Car image</a></li>-->
+                                            <li class="items"><a href="#car-info">Car info</a></li>
+                                            <li class="items"><a href="#keyfeatures">Highlights</a></li>
+                                            <li class="items"><a href="#overview">Car Details</a></li>
+                                            <li class="items"><a href="#perfomance">Engine perfomance</a></li>
+                                            <li class="items"><a href="#Documents">Documents</a></li>
+                                            <li class="items"><a href="#Interior">Interior</a></li>
+                                            <li class="items"><a href="#Exterior">Exterior</a></li>
+                                            <li class="items"><a href="#CarBodyEvalaution">Car Body Evalaution</a></li>
+                                            <li class="items"><a href="#Mechinal">Mechinal</a></li>
+                                            <li class="items"><a href="#Electrical">Electrical</a></li>
+                                            <li class="items"><a href="#Suspension">Suspension</a></li>
+                                            <li class="items"><a href="#Tyers">Tyers</a></li>
+                                            <li class="items"><a href="#Accessories">Accessories</a></li>
+                                            <li class="items"><a href="#TestDrive">Test Drive</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="car-details-wrapper mt-45">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <div class="car-details-content">
+                                                <!-- car-view-wrapper -->
+                                                <div id="car-view" class="prt-car-features car-view-wrapper mb-45 res-991-mb-30">
+                                                    <!-- prt-tabs -->
+                                                    <div class="prt-tabs prt-tab-style-03">
+                                                        <div class="content-tab">
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner active">
+                                                                <!-- prt_image-wrapper -->
+                                                                <div class="product-img-wrapper border-rad_20" data-aos="fade-right" data-aos-duration="1500">
+                                                                    <div class="slick_slider" data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "arrows":false, "autoplay":true, "dots":false, "infinite":true, "responsive":[{"breakpoint":1200,"settings": {"slidesToShow": 1}}, {"breakpoint":900,"settings":{"slidesToShow": 1}},{"breakpoint":545,"settings":{"slidesToShow": 1}}]}'>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/2.jpeg" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/2.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/3.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/3.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/4.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/4.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/5.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/5.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/6.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/6.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/ext/7.jpeg" alt="image">
+                                                                        </div>
+
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/Cars/Camry2024/Int/7.jpeg" alt="image">
+                                                                        </div>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <!-- prt_image-wrapper end-->
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner">
+                                                                <!-- prt_image-wrapper -->
+                                                                <div class="product-img-wrapper border-rad_20">
+                                                                    <div class="slick_slider " data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows":false, "autoplay":true, "dots":false, "infinite":true, "responsive":[{"breakpoint":1200,"settings": {"slidesToShow": 1}}, {"breakpoint":900,"settings":{"slidesToShow": 1}},{"breakpoint":545,"settings":{"slidesToShow": 1}}]}'>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-05.webp" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-06.webp" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-07.webp" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-08.webp" alt="image">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- prt_image-wrapper end-->
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner">
+                                                                <div class="prt-video-block">
+                                                                    <div class="video-autoplay">
+                                                                        <video class="img-fluid" loop="" autoplay="autoplay" controls="controls" muted="" content="noindex">
+                                                                            <source src="images/video.mp4" type="video/mp4">
+                                                                        </video>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner">
+                                                                <div class="product-img-wrapper border-rad_20">
+                                                                    <div class="slick_slider " data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows":false, "autoplay":true, "dots":false, "infinite":true, "responsive":[{"breakpoint":1200,"settings": {"slidesToShow": 1}}, {"breakpoint":900,"settings":{"slidesToShow": 1}},{"breakpoint":545,"settings":{"slidesToShow": 1}}]}'>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-01.webp" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-09.webp" alt="image">
+                                                                        </div>
+                                                                        <div class="product-img">
+                                                                            <img width="900" height="600" class="img-fluid" src="images/car-details/img-10.webp" alt="image">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                        </div>
+                                                        <!-- tabs -->
+                                                        <!--<ul class="tabs mt-30">
+                                                        <li class="tab active">
+                                                            <span class="prt-left"></span>
+                                                            <a href="#">Exterior</a>
+                                                            <span class="prt-right"></span>
+                                                        </li>
+                                                        <li class="tab">
+                                                            <span class="prt-left"></span>
+                                                            <a href="#">Interior</a>
+                                                            <span class="prt-right"></span>
+                                                        </li>
+                                                        <li class="tab">
+                                                            <span class="prt-left"></span>
+                                                            <a href="#">Video clip</a>
+                                                            <span class="prt-right"></span>
+                                                        </li>
+                                                        <li class="tab">
+                                                            <span class="prt-left"></span>
+                                                            <a href="#">Colors</a>
+                                                            <span class="prt-right"></span>
+                                                        </li>
+                                                    </ul>-->
+                                                        <!-- tabs end -->
+                                                    </div>
+                                                    <!-- prt-tabs end-->
+                                                </div>
+                                                <!-- car-view-wrapper end -->
+                                                <!-- car-info-wrapper -->
+                                                <div id="car-info" class="prt-car-features car-info-wrapper mb-25">
+                                                    <h3 class="title">Cars info</h3>
+                                                    <div class="carinfo-wrapper">
+                                                        <div class="carinfo-box">
+                                                            <span>25,100 miles</span>
+                                                            <p>Mileage</p>
+                                                        </div>
+                                                        <div class="carinfo-box">
+                                                            <span>22355 cc</span>
+                                                            <p>Engine</p>
+                                                        </div>
+                                                        <div class="carinfo-box">
+                                                            <span>Petrol + Gas</span>
+                                                            <p>Fuel type</p>
+                                                        </div>
+                                                        <div class="carinfo-box">
+                                                            <span>Brand new</span>
+                                                            <p>Conditions</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-info-wrapper end-->
+                                                <!-- car-Key features -->
+                                                <div id="keyfeatures" class="prt-car-features car-keyfeatures mb-35">
+                                                    <h3 class="title">Key features</h3>
+                                                    <div class="car-keyfeatures-wrapper">
+                                                        <div class="keyfeatures-wrapper">
+                                                            <ul class="prt-list prt-keyfeatures">
+                                                                <li>Premium wheel</li>
+                                                                <li>Front heated seats</li>
+                                                                <li>Moonroof</li>
+                                                                <li>Premium seat material</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="keyfeatures-wrapper">
+                                                            <ul class="prt-list prt-keyfeatures">
+                                                                <li>Premium audio</li>
+                                                                <li>Navigation</li>
+                                                                <li>Premium seat material</li>
+                                                                <li>Bluetooth</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="keyfeatures-wrapper">
+                                                            <ul class="prt-list prt-keyfeatures">
+                                                                <li>Remote engine start</li>
+                                                                <li>Blind spot system</li>
+                                                                <li>Front heated seats</li>
+                                                                <li>Multi-zone climate control</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Key features end -->
+                                                <!-- car-overview-wrapper -->
+                                                <div id="overview" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Car Details</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Make</span><span>Toyota</span></li>
+                                                                    <li><span>Year/Month</span><span>2023</span></li>
+                                                                    <li><span>Fuel Type</span><span>Petrol/Gas</span></li>
+                                                                    <li><span>No.of cylinder</span><span>04</span></li>
+                                                                    <li><span>Transmission</span><span>Manual</span></li>
+                                                                    <li><span>Wheel’s</span><span></span></li>
+                                                                    <li><span>Registration City</span><span>Karachi</span></li>
+                                                                    <li><span>Registration Year</span><span>2023</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Models    </span><span>Camry 2023</span></li>
+                                                                    <li><span>Milage    </span><span>30,100 Miles</span></li>
+                                                                    <li><span>Doors     </span><span>4 Doors</span></li>
+                                                                    <li><span>Engine    </span><span>22241 cc</span></li>
+                                                                    <li><span>Colors    </span><span>Sky blue</span></li>
+                                                                    <li><span>Steering  </span><span>Right</span></li>
+                                                                    <li><span>Location  </span><span>Clifton,Karachi</span></li>
+                                                                    <li><span>Registration Type</span><span>Private</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-overview-wrapper end -->
+                                                <!-- car-overview-wrapper -->
+                                                <div id="perfomance" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Engine performance</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Induction</span><span>Aspirated</span></li>
+                                                                    <li><span>Cylinders</span><span>5 cyl</span></li>
+                                                                    <li><span>Valve gear</span><span>DOHC with VVT</span></li>
+                                                                    <li><span>Power</span><span>140 kw 7000 rpm</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Engine size</span><span>3.5 L</span></li>
+                                                                    <li><span>Engine config</span><span>In-line</span></li>
+                                                                    <li><span>Fuel injection</span><span>Direct injection</span></li>
+                                                                    <li><span>Engine location</span><span>Front</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-overview-wrapper end -->
+                                                <!-- car-documents-wrapper -->
+                                                <div id="Documents" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Documents</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Has Orignal Licence Plate</span><span>Yes</span></li>
+
+                                                                    <li><span>No Of Owner</span><span>2</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Licence Plate Condition</span><span>Ok</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-documents-wrapper end -->
+                                                <!-- car-Interior-wrapper -->
+                                                <div id="Interior" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Interior</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Has Orignal Licence Plate</span><span>Yes</span></li>
+
+                                                                    <li><span>No Of Owner</span><span>2</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Licence Plate Condition</span><span>Ok</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Interior-wrapper end -->
+                                                <!-- car-Exterior-wrapper -->
+                                                <div id="Exterior" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Exterior</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Has Orignal Licence Plate</span><span>Yes</span></li>
+
+                                                                    <li><span>No Of Owner</span><span>2</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Licence Plate Condition</span><span>Ok</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Exterior-wrapper end -->
+                                                <!-- car-CarBodyEvalaution-wrapper -->
+                                                <div id="CarBodyEvalaution" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Car Body Evalaution</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Front Bumper      </span><span>Major or Multiple Scratches, Total Genuine</span></li>
+                                                                    <li><span>Bonnet            </span><span>Minor Scratches , Total genuine</span></li>
+                                                                    <li><span>Front Windscreen  </span><span>Glass Scratches , Total genuine</span></li>
+                                                                    <li><span>Front Left Fender </span><span>Total genuine</span></li>
+                                                                    <li><span>Rear Bumber       </span><span>Total genuine</span></li>
+                                                                    <li><span>Left a-pillar     </span><span>Total genuine</span></li>
+                                                                    <li><span>Left b-pillar     </span><span>Total genuine</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Left c-pillar           </span><span>Total genuine</span></li>
+                                                                    <li><span>Left d-pillar           </span><span>Total genuine</span></li>
+                                                                    <li><span>Front Left Door         </span><span>Total genuine</span></li>
+                                                                    <li><span>Roof                    </span><span>Total genuine</span></li>
+                                                                    <li><span>Back Left Door         </span><span>Total genuine</span></li>
+                                                                    <li><span>Back Left Quarter Panel</span><span>Total genuine</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-CarBodyEvalaution-wrapper end -->
+                                                <!-- car-Mechinal-wrapper -->
+                                                <div id="Mechinal" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Mechinal</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Catalytic converter condtion</span><span>Ok</span></li>
+
+                                                                    <li><span>Radiator Condition</span><span>Ok</span></li>
+                                                                    <li><span>Engine Noise</span><span>Ok</span></li>
+                                                                    <li><span>Inner bonnet condition</span><span>Ok</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Bettry Condition</span><span>Ok</span></li>
+                                                                    <li><span>Transmission function</span><span>Ok</span></li>
+
+                                                                    <li><span>Has antilocking breaking system (ABS)</span><span>Yes</span></li>
+                                                                    <li><span>Engine smoke condition</span><span>Ok</span></li>
+                                                                    <li><span>Engine Oil condition</span><span>Ok</span></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Mechinal-wrapper end -->
+                                                <!-- car-Electrical-wrapper -->
+                                                <div id="Electrical" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Electrical</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Right headlamp condition</span><span>Scratched</span></li>
+                                                                    <li><span>Left headlamp condition</span><span>Scratched</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Back Left tail lap condition</span><span>Scratched</span></li>
+                                                                    <li><span>Back right tail lap condition</span><span>Scratched</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Electrical-wrapper end -->
+                                                <!-- car-Suspension-wrapper -->
+                                                <div id="Electrical" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Suspension</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Front right shock absorber condition</span><span>ok</span></li>
+                                                                    <li><span>Front right axle condition</span><span>ok</span></li>
+                                                                    <li><span>Back  right axle condition</span><span>ok</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Front left shock absorber condition</span><span>ok</span></li>
+                                                                    <li><span>Front left axle condition</span><span>ok</span></li>
+                                                                    <li><span>Back right shock absorber condition</span><span>ok</span></li>
+                                                                    <li><span>Back left shock absorber condition</span><span>ok</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Suspension-wrapper end -->
+                                                <!-- car-Tyers-wrapper -->
+                                                <div id="Tyers" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Tyers</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Front right tyre</span><span>80</span></li>
+                                                                    <li><span>Back right tyre </span><span>80</span></li>
+
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Front left tyre</span><span>80</span></li>
+                                                                    <li><span>Back  left tyre </span><span>80</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Tyers-wrapper end -->
+                                                <!-- car-Accessories-wrapper -->
+                                                <div id="Accessories" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Accessories</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Has Fog Light</span><span>Yes</span></li>
+                                                                    <li><span>Has immobilizer key </span><span>Yes</span></li>
+                                                                    <li><span>Has Push start </span><span>Yes</span></li>
+                                                                    <li><span>Upholstery type </span><span>Yes</span></li>
+
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Has electric seat </span><span>Yes</span></li>
+                                                                    <li><span>Has immobiliser </span><span>Yes</span></li>
+                                                                    <li><span>Has retractable sode mirror </span><span>Yes</span></li>
+                                                                    <li><span>Has Spare Wheel </span><span>Yes</span></li>
+                                                                    <li><span>Has puncture kit </span><span>Yes</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-Accessories-wrapper end -->
+                                                <!-- car-TestDrive-wrapper -->
+                                                <div id="TestDrive" class="prt-car-features car-overviewwrapper mb-45">
+                                                    <h3 class="title">Test Drive</h3>
+                                                    <div class="car-overview-wrapper bg-base-grey border-rad_20 mt-25">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pr-30 res-767-pr-0">
+                                                                    <li><span>Engine function</span><span>ok</span></li>
+                                                                    <li><span>Suspension function </span><span>Yes</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <ul class="prt-list prt-overview-list pl-30 res-767-pl-0">
+                                                                    <li><span>Steering function </span><span>ok</span></li>
+                                                                    <li><span>Brake function </span><span>ok</span></li>
+                                                                    <li><span>Transmission condition </span><span>Ok</span></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-TestDrive-wrapper end -->
+                                                <!-- car-colors -->
+                                                <div id="car-colors" class="prt-car-features car-colors-wrapper position-relative">
+                                                    <h3 class="title">Car Colors</h3>
+                                                    <div class="row slick_slider slick-arrow-style1" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "arrows":true, "autoplay":true, "dots":false, "infinite":true, "responsive":[{"breakpoint":1200,"settings": {"slidesToShow": 2}}, {"breakpoint":900,"settings":{"slidesToShow": 2}},{"breakpoint":545,"settings":{"slidesToShow": 1}}]}'>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <!-- featured-imagebox -->
+                                                            <div class="featured-imagebox featured-imagebox-service style1">
+                                                                <div class="featured-thumbnail">
+                                                                    <img width="414" height="261" class="img-fluid" src="images/gallery/gallery-img-07.webp" alt="icon">
+                                                                </div>
+                                                            </div>
+                                                            <!-- featured-imagebox end -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <!-- featured-imagebox -->
+                                                            <div class="featured-imagebox featured-imagebox-service style1">
+                                                                <div class="featured-thumbnail">
+                                                                    <img width="414" height="261" class="img-fluid" src="images/gallery/gallery-img-08.webp" alt="icon">
+                                                                </div>
+                                                            </div>
+                                                            <!-- featured-imagebox end -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <!-- featured-imagebox -->
+                                                            <div class="featured-imagebox featured-imagebox-service style1">
+                                                                <div class="featured-thumbnail">
+                                                                    <img width="414" height="261" class="img-fluid" src="images/gallery/gallery-img-15.webp" alt="icon">
+                                                                </div>
+                                                            </div>
+                                                            <!-- featured-imagebox end -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <!-- featured-imagebox -->
+                                                            <div class="featured-imagebox featured-imagebox-service style1">
+                                                                <div class="featured-thumbnail">
+                                                                    <img width="414" height="261" class="img-fluid" src="images/gallery/gallery-img-16.webp" alt="icon">
+                                                                </div>
+                                                            </div>
+                                                            <!-- featured-imagebox end -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- car-colors end -->
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="car-details-sidebar res-991-mt-30">
+                                                <aside class="widget car-widget widget-contact bg-base-grey border-rad_20">
+                                                    <!-- single-contact -->
+                                                    <div class="single-contact" id="phoneNumber" data-phone="+1-800-356-8933">
+                                                        <a>Show number</a>
+                                                    </div>
+                                                    <!-- single-contact end -->
+                                                    <!-- single-contact -->
+                                                    <div class="single-contact" id="emailAdress" data-email="info@gmail.com">
+                                                        <a>Email us now!</a>
+                                                    </div>
+                                                    <!-- single-contact end -->
+                                                    <!-- single-contact -->
+                                                    <div class="single-contact" id="whatsapp" data-phone="+1-800-356-8933">
+                                                        <a>Whatsapp</a>
+                                                    </div>
+                                                    <!-- single-contact end -->
+                                                </aside>
+                                                <aside class="widget car-widget widget-contact-form with-title bg-base-grey border-rad_20">
+                                                    <h3 class="title">To more inquiry</h3>
+                                                    <p>If choose this car to contact easily with us.</p>
+                                                    <form action="#" class="query_form-1 wrap-form clearfix" method="post">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label>Name*</label>
+                                                                <span class="text-input"><input name="name" type="text" value="" placeholder=" Your first name" required="required"></span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <label>Email*</label>
+                                                                <span class="text-input"><input name="email" type="text" value="" placeholder=" Your email address" required="required"></span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <label>Phone*</label>
+                                                                <span class="text-input"><input name="phone" type="text" value="" placeholder="Your phone number" required="required"></span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <label>Message*</label>
+                                                                <span class="text-input"><textarea name="message" rows="4" placeholder="Write your message..." required="required"></textarea></span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <button class="prt-btn prt-btn-size-sm prt-btn-shape-rounded prt-btn-style-border prt-btn-color-white mt-15" type="submit">Submit</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </aside>
+                                                <aside class="widget car-widget widget-recent-car with-title bg-base-grey border-rad_20">
+                                                    <h3 class="title">Recent vehicles</h3>
+                                                    <!-- prt-tabs -->
+                                                    <div class="prt-tabs prt-tab-style-04 mt-25">
+                                                        <!-- tabs -->
+                                                        <ul class="tabs border-bottom">
+                                                            <li class="tab active"><a href="#">New car</a></li>
+                                                            <li class="tab"><a href="#">Used car</a></li>
+                                                        </ul>
+                                                        <!-- tabs end -->
+                                                        <div class="content-tab mt-30">
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner active">
+                                                                <!-- featured-imagebox -->
+                                                                <div class="featured-imagebox featured-imagebox-service style2 border border-rad_20" data-aos="fade-up" data-aos-duration="1000">
+                                                                    <div class="featured-thumbnail border-rad_20">
+                                                                        <img width="180" height="146" class="img-fluid" src="images/services/img-01.webp" alt="image">
+                                                                        <div class="prt-pricetag-wrapper">
+                                                                            <h3 class="title">$55,345 <span>$89,0345</span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="featured-content">
+                                                                        <div class="featured-title">
+                                                                            <h3><a href="#">Chevrolet camaro</a></h3>
+                                                                        </div>
+                                                                        <div class="featured-desc">
+                                                                            <p>25,100 miles</p>
+                                                                            <p>Petrol + Gas</p>
+                                                                            <p>22,314 cc</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- featured-imagebox end -->
+                                                                <!-- featured-imagebox -->
+                                                                <div class="featured-imagebox featured-imagebox-service style2 border border-rad_20" data-aos="fade-up" data-aos-duration="1500">
+                                                                    <div class="featured-thumbnail border-rad_20">
+                                                                        <img width="180" height="146" class="img-fluid" src="images/services/img-02.webp" alt="image">
+                                                                        <div class="prt-pricetag-wrapper">
+                                                                            <h3 class="title">$55,345 <span>$89,0345</span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="featured-content">
+                                                                        <div class="featured-title">
+                                                                            <h3><a href="#">Mercedes benz</a></h3>
+                                                                        </div>
+                                                                        <div class="featured-desc">
+                                                                            <p>25,100 miles</p>
+                                                                            <p>Petrol + Gas</p>
+                                                                            <p>22,314 cc</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- featured-imagebox end -->
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                            <!-- content-inner -->
+                                                            <div class="content-inner">
+                                                                <!-- featured-imagebox -->
+                                                                <div class="featured-imagebox featured-imagebox-service style2 border border-rad_20">
+                                                                    <div class="featured-thumbnail border-rad_20">
+                                                                        <img width="180" height="146" class="img-fluid" src="images/services/img-03.webp" alt="image">
+                                                                        <div class="prt-pricetag-wrapper">
+                                                                            <h3 class="title">$55,345 <span>$89,0345</span></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="featured-content">
+                                                                        <div class="featured-title">
+                                                                            <h3><a href="#">Hyundai sonata</a></h3>
+                                                                        </div>
+                                                                        <div class="featured-desc">
+                                                                            <p>25,100 miles</p>
+                                                                            <p>Petrol + Gas</p>
+                                                                            <p>22,314 cc</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- featured-imagebox end -->
+                                                            </div>
+                                                            <!-- content-inner end-->
+                                                        </div>
+                                                    </div>
+                                                    <!-- prt-tabs end-->
+                                                </aside>
+                                                <aside class="widget car-widget widget-banner-car border-rad_20">
+                                                    <div class="prt-col-bgcolor-yes prt-bgcolor-grey prt-textcolor-white col-bg-img-one prt-col-bgimage-yes prt-bg">
+                                                        <div class="prt-col-wrapper-bg-layer prt-bg-layer border-rad_20">
+                                                            <div class="prt-col-wrapper-bg-layer-inner "></div>
+                                                        </div>
+                                                        <div class="layer-content">
+                                                            <span>Sale 25% Off!</span>
+                                                            <h3 class="widget-title">Luxury car interiors <br>all cars model</h3>
+                                                            <div class="prt-banner mt-15" data-aos="fade-up" data-aos-duration="1000">
+                                                                <a class="prt-btn prt-btn-size-sm prt-btn-shape-rounded prt-btn-style-border prt-btn-color-white" href="#">Contact us</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </aside>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- car-details-section end-->
+
+        </div><!-- site-main end-->
+        <!-- footer start -->
+        <footer class="footer widget-footer text-base-white overflow-hidden clearfix">
+            <div class="second-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                            <div class="pr-30 res-1199-pr-0" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="footer-cta-wappper">
+                                    <span class="pretitle">Top brands 2023</span>
+                                    <h2 class="title">New arrival audi sedan S23 car </h2>
+                                    <p>Get 50% off selected items</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                            <div class="row justify-content-between spacing-3 res-1199-mt-30">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="footer-widget-box res-575-mt-30">
+                                        <h3 class="widget-title-h3">Our services</h3>
+                                        <div class="footer-menu-links">
+                                            <ul class="footer-menu-list">
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Browse used a car</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Auction car</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Browse offer</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Get in touch</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Prodge cars</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Sedan car</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="footer-widget-box res-575-mt-30">
+                                        <h3 class="widget-title-h3">About company</h3>
+                                        <div class="footer-menu-links">
+                                            <ul class="footer-menu-list">
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">About us</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Return & exchange</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Refund policy</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Reviews</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">FAQ’s</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Contact us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="footer-widget-box res-767-mt-30">
+                                        <h3 class="widget-title-h3">Cars by brands</h3>
+                                        <div class="footer-menu-links">
+                                            <ul class="footer-menu-list">
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">BMW</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Ferrari</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Mercedes</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Suzuki</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">TATA</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Toyota</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="footer-widget-box res-767-mt-30">
+                                        <h3 class="widget-title-h3">Search & explore</h3>
+                                        <div class="footer-menu-links">
+                                            <ul class="footer-menu-list">
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Used cars</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">New cars</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Auction cars</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Sell my car</a></li>
+                                                <li class="footer-menu-item"><a href="#" class="footer-menu-item-link">Shop now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="bottom-footer-border">
+                                <div class="row prt-vertical_sep align-items-center">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row pr-30">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="prt-hotline-area">
+                                                    <p>Call now <i class="flaticon flaticon-missed-call"></i> Available 24/7</p>
+                                                    <a href="tel:1234567890" class="hotline-link">+92-800-356-8933</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="prt-hotline-area">
+                                                    <p>Email us </p>
+                                                    <a href="mailto:info@example.com" class="hotline-link">info@carobar.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="prt-hotline-area">
+                                                    <p>Address</p>
+                                                    <a href="https://www.google.com/" class="hotline-link">Clifton,Karachi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding-right pr-0 res-1199-pr-15">
+                                        <!-- Newsletter -->
+                                        <div class="newsletter-form-main clearfix pl-55 res-1199-pl-0">
+                                            <div class="widget-form">
+                                                <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+                                                    <div class="mailchimp-inputbox clearfix" id="subscribe-content">
+                                                        <p class="mb-5 margin-right"><input type="email" name="email" placeholder="Email us" required=""></p>
+                                                        <button class="submit" type="submit">Send message</button>
+                                                    </div>
+                                                    <p class="cookies">
+                                                        <input type="checkbox" name="cookies-consent" id="cookies-consent1">
+                                                        <label for="cookies-consent1"></label>
+                                                        You agree to our friendly <a href="#">Privacy Policy</a>
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright-text">
+                                <div class="cpy-text">
+                                    <p>
+                                        Copyright © 2024
+                                        <a href="#">Carobar.</a> All rights reserved. powered by
+                                        <a href="#">Core Revolution Technologies Pvt. Ltd.</a>
+                                    </p>
+                                </div>
+                                <ul class="footer-nav-menu">
+                                    <li><a href="#"> Privacy policy </a></li>
+                                    <li><a href="#"> Terms and conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- back-to-top start -->
+        <a id="totop" href="#top" style="display: inline;" class="top-visible">
+            <i class="icon-angle-up"></i>
+        </a>
+        <!-- back-to-top end -->
+
+    </div><!-- page end -->
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/Scrolltrigger.js"></script>
+    <script src="js/Splittext.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/jquery-validate.js"></script> 
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/slick.min.js"></script>   
+    <script src="js/numinate.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/jquery-isotope.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 400,
+            delay:0,
+            once: true,
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from cymolthemes.com/html/autovis/demo2/car-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Apr 2024 17:19:50 GMT -->
+</html>
